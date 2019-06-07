@@ -11,22 +11,22 @@ client.on('message', message => {
       
   if (message.content.startsWith(adminprefix + 'b2')) {
     client.user.setGame(argresult);
-      message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
+      message.channel.send(`**تـــ تغيير الحالة ي انجل ــم   ${argresult}**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'b3')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
+      message.channel.send(`**تـــ تغيير الحالة ي انجل ــم   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'b4')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
+      message.channel.send(`**تـــ تغيير الحالة ي انجل ــم   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'bt')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
-      message.channel.send(`**تـــ تغيير الحالة ــم**`)
+      message.channel.send(`**تـــ تغيير الحالة ي انجل ــم**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
