@@ -9,22 +9,22 @@ client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'b2')) {
+  if (message.content.startsWith(adminprefix + 'a2')) {
     client.user.setGame(argresult);
       message.channel.send(`**تـــ تغيير الحالة ي انجل ــم   ${argresult}**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
-  if (message.content.startsWith(adminprefix + 'b3')) {
+  if (message.content.startsWith(adminprefix + 'a3')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**تـــ تغيير الحالة ي انجل ــم   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'b4')) {
+  if (message.content.startsWith(adminprefix + 'a4')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**تـــ تغيير الحالة ي انجل ــم   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'bt')) {
+  if (message.content.startsWith(adminprefix + 'as')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
       message.channel.send(`**تـــ تغيير الحالة ي انجل ــم**`)
   }
